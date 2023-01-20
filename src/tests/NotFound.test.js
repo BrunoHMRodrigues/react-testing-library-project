@@ -9,10 +9,6 @@ beforeEach(() => {
   act(() => {
     history.push('/nao-existe');
   });
-
-  //   const { location: { pathname } } = history;
-
-//   expect(pathname).toBe('/about');
 });
 
 describe('Teste o componente <NotFound.js />', () => {
