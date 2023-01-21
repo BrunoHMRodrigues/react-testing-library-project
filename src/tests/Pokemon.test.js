@@ -15,20 +15,6 @@ const isPokemonFavoriteById = {
   143: false,
   151: false };
 
-//   const fetchPokemonTypes = () => [...new Set(pokemonList
-//     .reduce((types, { type }) => [...types, type], []))];
-
-//   const pokemonTypes = fetchPokemonTypes();
-
-// fetchFilteredPokemon = () => {
-//   const filteredType = 'all';
-
-//   return pokemonList.filter((pokemon) => {
-//     if (filteredType === 'all') return true;
-//     return pokemon.type === filteredType;
-//   });
-// };
-
 const pokemon = {
   id: 25,
   name: 'Pikachu',
@@ -52,12 +38,6 @@ const pokemon = {
   summary: 'This intelligent Pokémon roasts hard berries with electricity to make them tender enough to eat.',
 };
 
-// beforeEach(() => {
-//   renderWithRouter(<Pokemon
-//     pokemon={ pokemon }
-//     isFavorite={ isPokemonFavoriteById[pokemon.id] }
-//   />);
-// });
 const moreDetailsText = 'More details';
 describe('Teste o componente <Pokemon.js />', () => {
   describe('Teste se é renderizado um card com as informações de determinado Pokémon', () => {

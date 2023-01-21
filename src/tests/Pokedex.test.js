@@ -1,7 +1,6 @@
 import React from 'react';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-// import { act } from 'react-dom/test-utils';
 import renderWithRouter from '../renderWithRouter';
 import Pokedex from '../pages/Pokedex';
 import pokemonList from '../data';
@@ -27,6 +26,7 @@ beforeEach(() => {
 });
 
 const nextPokemon = 'Próximo Pokémon';
+
 describe('Teste o componente <Pokedex.js />', () => {
   it('Página contém um heading h2 com o texto Encountered Pokémon', () => {
     const encounterTitle = screen.getByRole('heading', { level: 2, name: 'Encountered Pokémon' });
@@ -62,6 +62,7 @@ describe('Teste o componente <Pokedex.js />', () => {
 
       expect(countWeights.length).toBe(1);
     });
+
     describe('Pokédex tem os botões de filtro', () => {
       it('Deve existir um botão de filtragem para cada tipo de Pokémon, sem repetição', () => {
         const typeBtns = screen.getAllByTestId('pokemon-type-button');
